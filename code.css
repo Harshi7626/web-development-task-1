@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 10;
+    padding: 1rem 0;
+  }
+  .header .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .header .nav ul {
+    list-style: none;
+    display: flex;
+  }
+  .header .nav ul li {
+    margin-left: 1rem;
+  }
+  .header .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .header .nav ul li a:hover {
+    color: #ff69b4; /* Pink hover color */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://www.cmr.edu.in/blog/wp-content/uploads/2023/04/THE-ART-AND-SCIENCE-OF-FASHION-DESIGN.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Slight dark overlay for better text visibility */
+  }
+  .hero-content {
+    position: relative;
+    color: #fff;
+  }
+  .hero h2 {
+    font-size: 4rem;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff69b4; /* Pink tagline color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Highlight effect */
+  }
+  .hero p {
+    margin: top 1em;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  .hero p {
+    margin-top: 1rem;
+    font-style: oblique;
+    font-size: 1.5rem; /* Larger font size for better readability */
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for contrast */
+    line-height: 1.8; /* Adjust line height for spacing */
+    max: width 800px;; /* Restrict the width to avoid stretching on larger screens */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+  }
+  
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
